@@ -1,8 +1,8 @@
 <h2>Available Toppings</h2>
 
 <div *ngFor="let pt of availablePizzaToppings">
-
-    <input type="checkbox" name="" id="">
-    {{pt.name}} ({{pt.price | currency}})
-
+    <label>
+        <input type="checkbox" name="" id="">
+        {{pt.name}} ({{pt.price | currency}})
+    </label>
 </div>
