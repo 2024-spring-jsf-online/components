@@ -10,7 +10,7 @@ export class PizzaService {
   getPizzaToppingsFromTheCloud() {
     //pretend we make a service call here
 
-    const getPizzaToppingsFromWebService = [
+    const toppingsFromWebService = [
       {
         name: 'olives'
         , price: 2.25
@@ -25,6 +25,6 @@ export class PizzaService {
       }
     ]
 
-    return getPizzaToppingsFromWebService; 
+    return toppingsFromWebService; 
   }
 }
