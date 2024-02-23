@@ -1,1 +1,20 @@
-<p>pizza-toppings works!</p>
+<h2>
+Avaible Toppings
+</h2>
+<div
+
+    *ngFor = "let pt of availablePizzaToppings"
+>
+
+<label>
+    <input 
+
+    type="checkbox"
+    [(ngModel)]="pt.checked"
+
+    />
+    {{pt.name}} ({{pt.price   | currency}})
+
+</label>
+
+</div>
