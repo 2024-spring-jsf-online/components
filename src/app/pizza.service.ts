@@ -11,15 +11,15 @@ export class PizzaService {
     // pretend we make a web service call here
     const toppingsFromWebService = [
       {
-        name: "olives",
+        name: "Olives",
         price: 2.25
       },
       {
-        name: "pepperoni",
+        name: "Pepperoni",
         price: 1.50
       },
       {
-        name: "sausage",
+        name: "Sausage",
         price: 1.75
       }
     ];
