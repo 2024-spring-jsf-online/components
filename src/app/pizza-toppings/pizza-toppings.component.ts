@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
-
 interface PizzaToppingDisplay {
   name: string;
   price: number;
@@ -11,36 +10,36 @@ interface PizzaToppingDisplay {
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
-  styleUrl: './pizza-toppings.component.css'
+  styleUrl: './pizza-toppings.component.css',
 })
 
 //Magic Di..
-
 export class PizzaToppingsComponent implements OnInit {
+  constructor(private pizzaSvc: PizzaService) {}
 
+  availablePizzaToppings: PizzaToppingDisplay[] = [];
 
-constructor (
-  private pizzaSvc: PizzaService
-) {}
+  ngOnInit(): void {
+    const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
 
+    console.log(pt);
 
-availablePizzaToppings: PizzaToppingDisplay[] = [];
+    this.availablePizzaToppings = pt.map((x) => ({
+      ...x,
+      checked: false,
+    }));
 
-ngOnInit(): void {
+    console.log(this.availablePizzaToppings);
+  }
 
-  const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
+  totalPrice = 0;
 
-  console.log(pt);
+  calculateTotal = () => {
+    this.totalPrice = this.availablePizzaToppings
+      .filter(x => x.checked)
+      .reduce (
+        (acc, x) => acc + x.price
+        , 0);
 
-  this.availablePizzaToppings = pt.map(
-    x => ({
-        ...x
-        , checked: false
-      })
-  );
-  
-console.log(this.availablePizzaToppings);
-
-}
-
+   }
 }
