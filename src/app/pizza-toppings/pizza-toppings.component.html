@@ -1,5 +1,5 @@
 <h2>
-    Available Pizza Toppings
+    Available Toppings
 </h2>
 <div
     *ngFor="let pt of availablePizzaToppings"
@@ -13,11 +13,7 @@
     </label>
 </div>
 <br>
-<button
-    (click)="calculateTotal()"
->
-    Calculate Total
-</button>
+
 <h3>
     Total: {{ totalPrice | currency }}
 </h3>
