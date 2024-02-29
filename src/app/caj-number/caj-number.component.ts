@@ -13,4 +13,8 @@ export class CajNumberComponent {
   
   divide = () => this.total = this.numberOne / this.numberTwo;
 
+  color = "";
+
+  favColor = () => this.color;
+
 }

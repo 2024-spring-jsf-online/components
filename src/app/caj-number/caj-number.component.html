@@ -37,6 +37,22 @@
     <br><br>
     {{ total }}
     
-   
+    <br><br><br>
+
+    <mat-form-field>
+        <mat-label>color</mat-label>
+        <input 
+        matInput 
+        type="text"
+        [{ngModel}]="color"
+        >
+        <br>
+        <button
+            (click)="favColor()"
+        >Favorite Color</button>
+    </mat-form-field>
+   <p>My favorite color is...</p>
+   <br>
+   {{ color }}
     </mat-card-content>
 </mat-card>
