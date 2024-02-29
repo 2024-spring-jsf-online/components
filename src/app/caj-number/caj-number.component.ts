@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-caj-number',
@@ -16,5 +16,7 @@ export class CajNumberComponent {
   color = "";
 
   favColor = () => this.color;
+
+  
 
 }
