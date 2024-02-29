@@ -10,6 +10,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatChipsModule } from '@angular/material/chips';
+
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 
@@ -25,6 +28,8 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatSlideToggleModule
+    , MatChipsModule
   ],
   providers: [
     provideAnimationsAsync()
