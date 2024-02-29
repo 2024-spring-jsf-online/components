@@ -11,11 +11,13 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent
+    , PizzaToppingsComponent,
+    NumberGeneratorComponent
   ],
   imports: [
     BrowserModule,
