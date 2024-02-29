@@ -6,11 +6,12 @@
         <button
             mat-raised-button
             color="accent"
+            (click)="newNumber()"
         >
             Generate Number
         </button>
         <h3>
-            Number: 
+            Number: {{ myNum }}
         </h3>
     </mat-card-content>
 </mat-card>

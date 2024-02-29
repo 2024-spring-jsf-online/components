@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './number-generator.component.css'
 })
 export class NumberGeneratorComponent {
+  maxNumber: number = 101;
+  myNum: number = 0;
 
+  newNumber = () => {
+    this.myNum = Math.floor(Math.random() * this.maxNumber);
+  }
 }
