@@ -11,6 +11,6 @@ export class CajNumberComponent {
   numberTwo = 90;
   total = 1/9;
   
-  add = () => this.total = this.numberOne / this.numberTwo;
+  divide = () => this.total = this.numberOne / this.numberTwo;
 
 }
