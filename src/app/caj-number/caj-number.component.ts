@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class CajNumberComponent {
 
+  numberOne = 10;
+  numberTwo = 90;
+  total = 1/9;
+  
+  add = () => this.total = this.numberOne / this.numberTwo;
+
 }
