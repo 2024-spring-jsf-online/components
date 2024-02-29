@@ -12,11 +12,15 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NumberComponent } from './number/number.component';
+import { CajNumberComponent } from './caj-number/caj-number.component';
+import { MatInputModule } from '@angular/material/input'
+import { MatFormFieldModule } from '@angular/material/form-field'
+
 
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent, NumberComponent
+    , PizzaToppingsComponent, NumberComponent, CajNumberComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +29,8 @@ import { NumberComponent } from './number/number.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()
