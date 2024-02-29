@@ -23,6 +23,7 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { NumberGeneratorComponent } from './number-generator/number-generator.component';
+import { CajNumberComponent } from './caj-number/caj-number.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NumberGeneratorComponent } from './number-generator/number-generator.co
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
-    NumberGeneratorComponent
+    NumberGeneratorComponent,
+    CajNumberComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,11 +49,9 @@ import { NumberGeneratorComponent } from './number-generator/number-generator.co
     MatSelectModule,
     MatFormFieldModule,
     MatSlideToggleModule,
-    MatChipsModule
+    MatChipsModule,
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
