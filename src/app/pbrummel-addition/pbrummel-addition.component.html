@@ -11,6 +11,7 @@
             <mat-card-content>
               <p>{{ pizza.description }}</p>
             </mat-card-content>
+            <button mat-raised-button color=accent class="order-button" (click)="placeOrder()" [disabled]="!selectedPizza">Order</button>
           </mat-card>
         </div>
       </mat-card-content>
