@@ -10,7 +10,7 @@ Avaible Pizza Toppings
     <input 
 
     type="checkbox"
-    
+
     [(ngModel)]="pt.checked"
 
     />
@@ -18,13 +18,6 @@ Avaible Pizza Toppings
 
 </label>
 </div>
-<button
-(click) = "calculateTotal()"
-> 
-Calculate Total
-    
-   
-</button>
 <h3>
     Total: {{ totalPrice | currency}}
 </h3>
