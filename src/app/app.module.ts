@@ -9,13 +9,15 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PizzaToppingsComponent
+    PizzaToppingsComponent,
+    MtunaAdditionComponent
   ],
   imports: [
     BrowserModule,
