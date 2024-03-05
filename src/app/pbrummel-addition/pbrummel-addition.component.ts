@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-pbrummel-addition',
   templateUrl: './pbrummel-addition.component.html',
-  styleUrl: './pbrummel-addition.component.css'
+  styleUrl: './pbrummel-addition.component.css',
+  styles: ['h1 { font-weight: normal; }']
 })
 
 export class PbrummelAdditionComponent implements OnInit {
@@ -25,7 +26,6 @@ export class PbrummelAdditionComponent implements OnInit {
 
   placeOrder(): void {
     if (this.selectedPizza) {
-      // Handle placing the pizza order based on selected options
       console.log('Placing order:', {
         pizza: this.selectedPizza.name,
         price: this.selectedPizza.price,
