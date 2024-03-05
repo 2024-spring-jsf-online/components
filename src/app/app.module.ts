@@ -4,26 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
-
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    , PizzaToppingsComponent
+    AppComponent,
+    PizzaToppingsComponent,
+    MtunaAdditionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+
   ],
   providers: [
     provideAnimationsAsync()
