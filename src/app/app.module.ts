@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatChipsModule} from '@angular/material/chips';
 
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 
@@ -29,6 +30,7 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
+    MatChipsModule,
 
   ],
   providers: [
