@@ -10,7 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -26,6 +27,8 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
 
   ],
   providers: [
