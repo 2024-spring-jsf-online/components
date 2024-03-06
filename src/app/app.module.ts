@@ -12,6 +12,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatCheckboxModule,
     MatInputModule,
     MatFormFieldModule,
+    MatChipsModule,
 
   ],
   providers: [
