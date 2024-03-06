@@ -1,8 +1,18 @@
+
 <mat-card>
     <mat-card-title>
-        Batu 
+        Batu's Addition Component
     </mat-card-title>
-    <mat-card-content>
-    
-    </mat-card-content>
+    <br>
+    <mat-card-title>
+       Choose your Crust
+    </mat-card-title>
+    <br>
+    <mat-chip-listbox aria-label="Crust selection">
+        <mat-chip-option>Thin Crust</mat-chip-option>
+        <mat-chip-option>Hand Tossed(+0.75$)</mat-chip-option>
+        <mat-chip-option>Deep Dish (+1.00$)</mat-chip-option>
+        <mat-chip-option color="accent" selected>Brooklyn Style (+1.50$)</mat-chip-option>
+        <mat-chip-option color="warn">Suprise Me</mat-chip-option>
+      </mat-chip-listbox>
 </mat-card>

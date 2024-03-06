@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class MtunaAdditionComponent {
 
+  constructor () { }
+  
+  ngOnInit(): void {
+
+  }
 }
