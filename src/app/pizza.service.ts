@@ -27,4 +27,26 @@ export class PizzaService {
     return toppingsFromWebService;
   }
 
+  getPizzaSizesFromCloud() {
+    const pizzaSizes = [
+      {
+        name: 'Individual'
+      , price: 10.00
+      }
+    , {
+      name: 'Small'
+    , price: 12.00
+    }
+    , {
+      name: 'Medium'
+    , price: 14.00
+    } 
+    , {
+      name: 'Large'
+    , price: 16.00
+    } 
+    ]
+    return pizzaSizes;
+  }
+
 }

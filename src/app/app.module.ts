@@ -6,14 +6,15 @@ import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
 import { FormsModule } from '@angular/forms';
-import { PizzaSizesComponent } from './pizza-sizes/pizza-sizes.component';
+import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PizzaToppingsComponent,
-    PizzaSizesComponent
+    PizzaSizeComponent
+
   ],
   imports: [
     BrowserModule,
