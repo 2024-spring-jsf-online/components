@@ -7,6 +7,10 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {Component} from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
@@ -19,6 +23,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AppRoutingModule
     , FormsModule
     , MatSlideToggleModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+
   ],
   providers: [
     provideAnimationsAsync()
