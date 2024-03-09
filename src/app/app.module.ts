@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.component';
 
 import { FormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 @NgModule({
   declarations: [
     AppComponent
@@ -15,8 +18,11 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule
     , FormsModule
+    , MatSlideToggleModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
