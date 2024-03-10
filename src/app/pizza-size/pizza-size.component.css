@@ -1,0 +1,12 @@
+mat-card {
+    margin-left: 5pt;
+    margin-right: 5pt;
+    border: goldenrod 3pt solid;
+    border-radius: 8pt;
+    padding: 5pt;
+}
+div {
+    margin-left: 5pt;
+    margin-right: 5pt;
+    padding-left: 5pt;
+}
