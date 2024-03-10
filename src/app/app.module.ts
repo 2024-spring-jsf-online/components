@@ -13,10 +13,11 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
 @NgModule({
   declarations: [
     AppComponent
-    , PizzaToppingsComponent
+    , PizzaToppingsComponent, PizzaSizeComponent
   ],
   imports: [
     BrowserModule,
