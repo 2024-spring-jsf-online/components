@@ -1,13 +1,14 @@
 
-
+<main>
 <mat-card>
     <mat-card-title>Select Size</mat-card-title>
- <div  *ngFor="let ps of availableSizes" >
-    <mat-card-title>{{ ps.name }}</mat-card-title>
-    <mat-card-content>
+ <div *ngFor="let ps of availableSizes" >
+
     <mat-radio-button>
-     ({{ ps.price | currency }})
+    {{ ps.name }}
+    ({{ ps.price | currency }})
     </mat-radio-button>
-</mat-card-content>
+    
 </div>
 </mat-card>
+</main>
