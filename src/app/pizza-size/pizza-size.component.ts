@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
 interface PizzaSizeDisplay {
@@ -12,26 +12,28 @@ interface PizzaSizeDisplay {
   templateUrl: './pizza-size.component.html',
   styleUrl: './pizza-size.component.css'
 })
-export class PizzaSizeComponent {
+
+
+export class PizzaSizeComponent implements OnInit {
   constructor(
     private pizzaSvc: PizzaService
   ) { }
 
-  availablePizzaSizes: PizzaSizeDisplay[] = [];
+  availableSizes: PizzaSizeDisplay[] = [];
 
   ngOnInit(): void {
 
     const ps = this.pizzaSvc.getPizzaSize();
     console.log(ps);
 
-    this.availablePizzaSizes = ps.map(
+    this.availableSizes = ps.map(
       x => ({
         ...x
         , checked: false
       })
     );
 
-    console.log(this.availablePizzaSizes);
+    console.log(this.availableSizes);
   }
 
 

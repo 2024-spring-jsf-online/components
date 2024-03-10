@@ -11,6 +11,8 @@ import {Component} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
@@ -27,6 +29,8 @@ import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    , MatChipsModule
+    , MatRadioModule
 
   ],
   providers: [
