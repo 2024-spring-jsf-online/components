@@ -1,0 +1,26 @@
+<form>
+  <mat-card>
+    <mat-card-title> Julian's Dropdown Menu Component </mat-card-title>
+    <mat-card-content>
+      <h5>Use native HTML select for better accessibility</h5>
+      <mat-form-field>
+        <mat-label>Choose Your Favorite (required)</mat-label>
+        <select
+          matNativeControl
+          required
+          [(ngModel)]="selectedWord"
+          name="word"
+        >
+          <option label="-- Select --"></option>
+          @for (word of words; track word) {
+          <option [value]="word.value">{{ word.viewValue }}</option>
+          }
+        </select>
+        @if (selectFormControl.hasError('required')) {
+        <mat-error>This field is required</mat-error>
+        }
+      </mat-form-field>
+      <p>Selected word: {{ selectedWord }}</p>
+    </mat-card-content>
+  </mat-card>
+</form>
