@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
@@ -19,6 +20,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
+import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,7 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent
-    , PizzaSizeComponent
+  , PizzaSizeComponent
 
   ],
   imports: [
@@ -43,7 +45,7 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
     MatFormFieldModule,
     MatSlideToggleModule,
     MatChipsModule
-    , MatRadioModule
+  , MatRadioModule
   ],
   providers: [
     provideAnimationsAsync()
