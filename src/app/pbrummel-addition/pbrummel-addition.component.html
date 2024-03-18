@@ -1,9 +1,9 @@
 <div class="pizza-container">
     <mat-card>
       <mat-card-header>
-        <mat-card-title style="margin-left: -10px;">Pizza Menu</mat-card-title>
+        <mat-card-title style="margin-left: -10px;">Peter's Pizza Selection Component</mat-card-title>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content class="pizza-items-container">
         <div class="pizza-item" *ngFor="let pizza of pizzaMenu" [class.selected]="pizza === selectedPizza" (click)="selectPizza(pizza)">
           <mat-card>
             <mat-card-title>{{ pizza.name }}</mat-card-title>
@@ -14,6 +14,9 @@
             <button mat-raised-button color=accent class="order-button" (click)="placeOrder()">Order</button>
           </mat-card>
         </div>
+      </mat-card-content>
+      <mat-card-content *ngIf="selectedPizza" class="selected-pizza">
+        <p>Selected Pizza: {{ selectedPizza.name }}</p>
       </mat-card-content>
     </mat-card>
 </div>
