@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { PizzaService } from '../pizza.service';
 
+//define shape of data for view from component (view-model)
+interface PizzaToppingDisplay {
+  name: string;
+  price: number;
+  checked: boolean;
+}
+
 @Component({
   selector: 'app-pizza-toppings',
   templateUrl: './pizza-toppings.component.html',
@@ -15,12 +22,26 @@ export class PizzaToppingsComponent {
     private pizzaSvc: PizzaService
     ) { }
 
+    //property annotated to be pizza topping display array
+    availablePizzaToppings: PizzaToppingDisplay[] = [];
+
   //angular method called when component is created and is ready to init
-  ngOnInit(): void{
+  ngOnInit(): void {
     //calls pizzaSvc that was injected (DI) in constructor (line 15)
     //calls function within pizza service ts
-    const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud;
+    const pt = this.pizzaSvc.getPizzaToppingsFromTheCloud();
     console.log(pt);
+
+    //data is coming from webService, but does not include checked
+    //property. To create the shape that we want, we use map
+    this.availablePizzaToppings = pt.map(
+      x => ({
+        ...x,
+        checked: false
+      })
+    );
+
+    console.log(this.availablePizzaToppings);
   }
 
-}
+  };
