@@ -43,5 +43,19 @@ export class PizzaToppingsComponent {
 
     console.log(this.availablePizzaToppings);
   }
+  
+  //total price property initialized to 0
+  totalPrice = 0;
+
+  calculateTotal = () => {
+    //when press calculate total
+      //reassign totalPrice to this.availablePizzaToppings
+    this.totalPrice = this.availablePizzaToppings
+      //filter this.availbePizzaToppings by checked property
+     .filter(x => x.checked)
+     //reduce just checked properties by summing price
+     .reduce((acc, x) => acc + x.price,
+     0)
+  }
 
   };
