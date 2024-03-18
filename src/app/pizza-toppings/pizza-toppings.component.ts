@@ -33,7 +33,7 @@ export class PizzaToppingsComponent {
     console.log(pt);
 
     //data is coming from webService, but does not include checked
-    //property. To create the shape that we want, we use map
+    //property. To create the shape that we want, we use map   
     this.availablePizzaToppings = pt.map(
       x => ({
         ...x,
