@@ -9,6 +9,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -20,6 +21,8 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
+import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
+import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
 
 @NgModule({
@@ -29,6 +32,8 @@ import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
+    PbrummelAdditionComponent,
+    MtunaAdditionComponent,
     CebAdditionComponent,
 
   ],
