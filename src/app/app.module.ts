@@ -10,8 +10,6 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { NumberComponent } from './number/number.component';
 import { CajNumberComponent } from './caj-number/caj-number.component';
-import { MatInputModule } from '@angular/material/input'
-import { MatFormFieldModule } from '@angular/material/form-field'
 
 
 import { MatInputModule } from '@angular/material/input';
@@ -42,8 +40,8 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     , MatCheckboxModule
     , MatInputModule
     , MatFormFieldModule
-    AppComponent,
-    PizzaToppingsComponent,
+    
+    ,PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
@@ -52,20 +50,7 @@ import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.componen
     CajNumberComponent
 
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatSlideToggleModule,
-    MatChipsModule
-  ],
+
   providers: [
     provideAnimationsAsync()
   ],
