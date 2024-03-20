@@ -8,7 +8,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -23,6 +22,7 @@ import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
+import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 
 @NgModule({
   declarations: [
