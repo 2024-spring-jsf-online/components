@@ -9,8 +9,6 @@ import { MatChipsModule } from '@angular/material/chips';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CajNumberComponent } from './caj-number/caj-number.component';
-import { MatInputModule } from '@angular/material/input'
-import { MatFormFieldModule } from '@angular/material/form-field'
 
 
 import { MatInputModule } from '@angular/material/input';
@@ -30,30 +28,29 @@ import { NumberGeneratorComponent } from './number-generator/number-generator.co
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PizzaToppingsComponent,
+    AppComponent
+    , PizzaToppingsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+    , FormsModule
+    , MatCardModule
+    , MatButtonModule
+    , MatCheckboxModule
+    , MatInputModule
+    , MatFormFieldModule
+    
+    ,PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
-    NumberGeneratorComponent,
     CajNumberComponent
+
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatSelectModule,
-    MatFormFieldModule,
-    MatSlideToggleModule,
-    MatChipsModule
-  ],
+
   providers: [
     provideAnimationsAsync()
   ],
