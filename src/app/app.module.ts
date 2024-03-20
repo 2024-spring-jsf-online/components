@@ -47,6 +47,7 @@ import { NumberGeneratorComponent } from './number-generator/number-generator.co
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
+    NumberGeneratorComponent,
     CajNumberComponent
 
   ],
