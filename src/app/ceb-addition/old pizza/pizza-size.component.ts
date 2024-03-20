@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PizzaService } from '../pizza.service';
+import { PizzaService } from '../../pizza.service';
 
 interface PizzaSizeDisplay {
   name: string;

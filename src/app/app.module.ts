@@ -20,7 +20,7 @@ import { PizzaToppingsComponent } from './pizza-toppings/pizza-toppings.componen
 import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
-import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
+import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,8 @@ import { PizzaSizeComponent } from './pizza-size/pizza-size.component';
     PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
-    SnamAdditionComponent
-  , PizzaSizeComponent
+    SnamAdditionComponent,
+    CebAdditionComponent,
 
   ],
   imports: [
