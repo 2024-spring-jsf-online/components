@@ -36,7 +36,7 @@ export class PizzaToppingsComponent implements OnInit {
     console.log(this.availablePizzaToppings);
   }
 
-  
+
 
 
 }
