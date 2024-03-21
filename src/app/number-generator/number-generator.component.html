@@ -1,0 +1,17 @@
+<mat-card style="margin-top: 1.5em;">
+    <mat-card-title>
+        Ethan's Number Generator
+    </mat-card-title>
+    <mat-card-content>
+        <button
+            mat-raised-button
+            color="accent"
+            (click)="newNumber()"
+        >
+            Generate Number
+        </button>
+        <h3>
+            Number: {{ myNum }}
+        </h3>
+    </mat-card-content>
+</mat-card>

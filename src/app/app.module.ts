@@ -23,6 +23,7 @@ import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
+import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
 
 @NgModule({
@@ -34,8 +35,8 @@ import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
+    NumberGeneratorComponent,
     CebAdditionComponent,
-
   ],
   imports: [
     BrowserModule,
