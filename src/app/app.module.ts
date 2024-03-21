@@ -23,6 +23,7 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { NumberGeneratorComponent } from './number-generator/number-generator.component';
+import { ChsAdditionComponent } from './chs-addition/chs-addition.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NumberGeneratorComponent } from './number-generator/number-generator.co
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
-    NumberGeneratorComponent
+    NumberGeneratorComponent,
+    ChsAdditionComponent
   ],
   imports: [
     BrowserModule,
