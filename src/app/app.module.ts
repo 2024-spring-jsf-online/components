@@ -6,10 +6,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { CajNumberComponent } from './caj-number/caj-number.component';
-
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -25,36 +25,47 @@ import { SnamAdditionComponent } from './snam-addition/snam-addition.component';
 import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition.component';
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { NumberGeneratorComponent } from './number-generator/number-generator.component';
+import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-    , PizzaToppingsComponent
-  ],
+  declarations: [AppComponent, PizzaToppingsComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    , FormsModule
-    , MatCardModule
-    , MatButtonModule
-    , MatCheckboxModule
-    , MatInputModule
-    , MatFormFieldModule
-    
-    ,PizzaToppingsComponent,
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatFormFieldModule,
+
+    PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
     SnamAdditionComponent,
     PbrummelAdditionComponent,
     MtunaAdditionComponent,
     NumberGeneratorComponent,
-    CajNumberComponent
-
+    CebAdditionComponent,
+    CajNumberComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatChipsModule,
+    MatRadioModule,
   ],
 
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

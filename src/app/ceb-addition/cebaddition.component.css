@@ -4,3 +4,8 @@ mat-card {
     padding: 5pt;
     width: 85%;
 }
+div {
+    margin-left: 5pt;
+    margin-right: 5pt;
+    padding-left: 5pt;
+}
