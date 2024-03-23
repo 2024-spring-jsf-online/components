@@ -21,8 +21,8 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle'
     , PizzaToppingsComponent, ReiAdditionComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
+    , AppRoutingModule
     , FormsModule
     , MatCardModule
     , MatButtonModule
