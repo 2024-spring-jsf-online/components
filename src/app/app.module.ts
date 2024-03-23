@@ -9,7 +9,6 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatRadioModule } from '@angular/material/radio';
 
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { CajNumberComponent } from './caj-number/caj-number.component';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -26,19 +25,11 @@ import { PbrummelAdditionComponent } from './pbrummel-addition/pbrummel-addition
 import { MtunaAdditionComponent } from './mtuna-addition/mtuna-addition.component';
 import { NumberGeneratorComponent } from './number-generator/number-generator.component';
 import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
+import { CajNumberComponent } from './caj-number/caj-number.component';
 
 @NgModule({
-  declarations: [AppComponent, PizzaToppingsComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatInputModule,
-    MatFormFieldModule,
-
+  declarations: [
+    AppComponent,
     PizzaToppingsComponent,
     TjsMultiplicationComponent,
     JtaDropdownComponent,
@@ -64,7 +55,6 @@ import { CebAdditionComponent } from './ceb-addition/cebladdition.component';
     MatChipsModule,
     MatRadioModule,
   ],
-
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
 })
