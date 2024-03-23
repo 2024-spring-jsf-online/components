@@ -13,6 +13,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ReiAdditionComponent } from './rei-addition/rei-addition.component';
 
+import { MatButtonToggleModule } from '@angular/material/button-toggle'
+
 @NgModule({
   declarations: [
     AppComponent
@@ -25,6 +27,7 @@ import { ReiAdditionComponent } from './rei-addition/rei-addition.component';
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
+    ,MatButtonToggleModule
   ],
   providers: [
     provideAnimationsAsync()
