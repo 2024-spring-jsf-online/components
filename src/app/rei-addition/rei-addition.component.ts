@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ReiAdditionComponent {
 
-  absentGratuity = 25;
+  absentGratuity = 0;
 
-  totalPlusGrat = 30;
+  totalPlusGrat = 0;
 
   fifteenGrat = () => this.totalPlusGrat = (this.absentGratuity * .15) + this.absentGratuity;
   eighteenGrat = () => this.totalPlusGrat = (this.absentGratuity * .18) + this.absentGratuity;
   twentyGrat = () => this.totalPlusGrat = (this.absentGratuity * .2) + this.absentGratuity;
   twentyFiveGrat = () => this.totalPlusGrat = (this.absentGratuity * .25) + this.absentGratuity;
-  
 }

@@ -15,8 +15,9 @@
             <mat-button-toggle (click) = "fifteenGrat()">15%</mat-button-toggle>
             <mat-button-toggle (click) = "eighteenGrat()">18%</mat-button-toggle>
             <mat-button-toggle (click) = "twentyGrat()">20%</mat-button-toggle>
-            <mat-button-toggle (click) = "twentyFiveGrat">25%</mat-button-toggle>
+            <mat-button-toggle (click) = "twentyFiveGrat()">25%</mat-button-toggle>
         </mat-button-toggle-group>
-        {{ totalPlusGrat }}
+        <br><br>
+        {{ totalPlusGrat | currency}}
     </mat-card-content>
 </mat-card>
