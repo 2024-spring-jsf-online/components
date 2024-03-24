@@ -13,7 +13,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ReiAdditionComponent } from './rei-addition/rei-addition.component';
 
-import { MatButtonToggleModule } from '@angular/material/button-toggle'
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle'
     , MatCardModule
     , MatButtonModule
     , MatCheckboxModule
-    ,MatButtonToggleModule
+    , MatButtonToggleModule
+    , MatInputModule
+    , MatFormFieldModule
   ],
   providers: [
     provideAnimationsAsync()
