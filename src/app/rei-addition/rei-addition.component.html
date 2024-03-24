@@ -2,13 +2,21 @@
     <mat-card-title>
         Calculate Gratuity
     </mat-card-title>
+    <br>
     <mat-card-content>
-        
+        <mat-form-field>
+            <mat-label>
+                Total before gratuity
+            </mat-label>
+            <input type="number" matInput [(ngModel)] = "absentGratuity"/>
+        </mat-form-field>
+        <br>
         <mat-button-toggle-group>
-            <mat-button-toggle>15%</mat-button-toggle>
-            <mat-button-toggle>18%</mat-button-toggle>
-            <mat-button-toggle>20%</mat-button-toggle>
-            <mat-button-toggle>25%</mat-button-toggle>
+            <mat-button-toggle (click) = "fifteenGrat()">15%</mat-button-toggle>
+            <mat-button-toggle (click) = "eighteenGrat()">18%</mat-button-toggle>
+            <mat-button-toggle (click) = "twentyGrat()">20%</mat-button-toggle>
+            <mat-button-toggle (click) = "twentyFiveGrat">25%</mat-button-toggle>
         </mat-button-toggle-group>
+        {{ totalPlusGrat }}
     </mat-card-content>
 </mat-card>
