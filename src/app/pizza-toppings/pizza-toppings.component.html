@@ -2,6 +2,22 @@
     <mat-card-title>
         Available Pizza Toppings
     </mat-card-title>
+    <button
+        mat-mini-fab
+        (click)="checkAll()"
+    >
+        All
+    </button>
+    &nbsp;
+    <button
+        mat-mini-fab
+        color="secondary"
+        (click)="unCheckAll()"
+    >
+        None
+    </button>
+    <br>
+    <br>
     <mat-card-content>
 
         <div
@@ -16,6 +32,8 @@
         </div>
     <br>
     
+    
+
     <h3>
         Total: {{ totalPrice | currency }}
     </h3>
