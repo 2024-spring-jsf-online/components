@@ -12,8 +12,6 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ReiAdditionComponent } from './rei-addition/rei-addition.component';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 import { MatInputModule } from '@angular/material/input';
@@ -62,6 +60,8 @@ import { CajNumberComponent } from './caj-number/caj-number.component';
     MatSlideToggleModule,
     MatChipsModule,
     MatRadioModule,
+    MatButtonToggleModule
+    ,
   ],
   providers: [provideAnimationsAsync()],
   bootstrap: [AppComponent],
