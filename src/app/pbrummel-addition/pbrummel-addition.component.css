@@ -1,0 +1,32 @@
+.pizza-container {
+  display: flex;
+  align-items: center;
+}
+
+.pizza-item {
+  margin: 10px;
+}
+
+.order-button {
+  width: 100;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+
+.order-button:hover,
+.order-button:active {
+  background-color: #ad1457; 
+}
+
+.pizza-items-container {
+  display: flex;
+  flex-wrap: nowrap; 
+
+}
+
+.mat-mdc-card {
+  margin-top: 0.5%;
+  margin-bottom: 2%;
+}

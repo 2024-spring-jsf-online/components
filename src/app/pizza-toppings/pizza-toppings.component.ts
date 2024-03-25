@@ -61,5 +61,8 @@ export class PizzaToppingsComponent implements OnInit {
       , checked: false
     })
   );
+  
 
-}
+
+
+}  //CODE IS CLOSED BEYOND THIS POINT

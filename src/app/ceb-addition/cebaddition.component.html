@@ -1,0 +1,15 @@
+
+<mat-card>
+    <mat-card-title>Chris B's Component</mat-card-title>
+    <mat-card-content>
+        <mat-card-header>Choose pizza size</mat-card-header>
+ <div *ngFor="let ps of availableSizes" >
+
+    <mat-radio-button>
+    {{ ps.name }}
+    ({{ ps.price | currency }})
+    </mat-radio-button>
+</div> 
+</mat-card-content>
+</mat-card>
+<br>
